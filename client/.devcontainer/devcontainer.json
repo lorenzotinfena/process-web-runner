@@ -1,0 +1,8 @@
+{
+	"name": "flutter",
+	"image": "fischerscode/flutter",
+	"extensions": [
+		"dart-code.dart-code",
+		"dart-code.flutter"
+	]
+}
