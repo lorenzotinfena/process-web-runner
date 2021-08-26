@@ -1,0 +1,14 @@
+{
+    "name": "golang",
+    "image": "golang",
+     "appPort": 80,
+    "extensions": [
+        "ms-vscode.go",
+        "davidanson.vscode-markdownlint",
+        "shardulm94.trailing-spaces",
+        "IBM.output-colorizer"
+    ],
+    "settings": {
+        "go.useLanguageServer": true
+    }
+}

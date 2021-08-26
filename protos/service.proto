@@ -1,0 +1,30 @@
+syntax = "proto3";
+
+option go_package = "./service";
+
+service Runner {
+  rpc Add (Command) returns (Empty) {}
+  rpc Run (Id) returns (Empty) {}
+  rpc RequestStatus (Empty) returns (Status) {}
+  rpc Stop (Id) returns (Empty) {}
+}
+
+message Command {
+  string name = 1;
+}
+
+message Id {
+  uint32 id = 1;
+}
+
+message ProcessStatus {
+  Command command = 1;
+  Id id = 2;
+  bool active = 3;
+}
+
+message Status {
+  repeated ProcessStatus processes = 1;
+}
+
+message Empty { }
